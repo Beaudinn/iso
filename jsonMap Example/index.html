@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>Isogrid test met map.JSON</title>
+    <link href="css/map.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="js/json2.js"></script>
+	<script type="text/javascript" src="js/lib.js"></script>
+</head>
+
+<body>
+
+    <div id="info" style="display: none">
+        <h1>Uit komst</h1>
+        <input type="button" value="PNG toonen" onclick="changeCssClass('buildings')" /> 
+        <input type="button" value="Tile position" onclick="showTlesPosition()" />   
+        <p>infomaatsie</p>
+        <p id="msg" class="msg"></p>
+    </div>
+
+	<script type="text/javascript">
+    var map = new Map(400,100);
+	map.getMap('map/map22.json');
+    </script>
+    
+</body>
+</html>

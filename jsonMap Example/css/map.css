@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+*{ margin: 0px; padding: 0px; }
+
+/*--------------------------------------------------------*/
+/*                     tile van map                       */
+/*                                                        */
+
+/*------------>>>>>>>>>>>>>>>>>>>>>>>>--------------*/
+
+/*---->>>>>>>>---*/
+.tile
+{
+	background: #390;
+	width:24px;
+	height:12px;
+	position: absolute;
+	font-size:5px;
+	-moz-transform: skew(63deg,-26.6deg);
+	-webkit-transform: skew(63deg,-26.6deg);
+}
+.tile:hover {background:#666 !important;}
+.tile:active {background:#FF0 !important;}
+/*---<<<<<<<<<<-*/
+
+/*---->>>>>>>>---*/
+.building {
+	position: absolute;
+	margin:0px auto; 
+}
+
+.building img { border:none; cursor: pointer; }
+.building img.hovered { opacity:0.4; -moz-opacity:0.4; -webkit-opacity:0.4; -khtml-opacity:0.4; }
+div.buildings img.active {  }
+/*---|> if function is on */
+div.buildings_on img { border:1px solid #990000;  }
+div.buildings_on img.hovered { opacity:0.8; -moz-opacity:0.8; -webkit-opacity:0.8; -khtml-opacity:0.8; }
+div.buildings_on img.active { border:1px solid #009900; }
+/*---<<<<<<<<<<-*/
+
+/*--------------------------------------------------------*/
+/*                     Leyoud                            */
+/*-------------------------------------------------------*/
+#container
+{
+}
+	
+div#info {
+	background-color:#FFFFFF;
+	position: fixed;
+	top:0px;
+	left: 0px;
+	padding: 15px;
+	z-index:20;
+	border:1px solid #333333;
+	border-top:0px;
+	border-left:0px;
+}
+
+div#info h1 {
+	margin:0px;
+}
+/*                         Leyoud                         */
+/*-------------------------------------------------------*/

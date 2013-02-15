@@ -1,0 +1,10 @@
+{"buildings":[
+
+
+
+{"x":90,"y":70,"name":"cafe","type":"building","image":"cafe.png"},
+{"x":100,"y":70,"name":"cafe","type":"building","image":"cafe.png"},
+{"x":400,"y":120,"name":"cafe","type":"building","image":"cafe.png"}
+
+
+]}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+
+<tile id="8,7">
+<Naam>cafe</Naam>
+<innerHTML><![CDATA[
+<div id='buildingTile' class="buildings"><IMG  src="map/MAP22_IMG/cafe.png"style="position:absolute;" height="91" width="156" id="Cafe" /></div>]]>
+</innerHTML>
+<style>tile</style>
+</tile>
+
+<tile id="6,5">
+<Naam>Cafe2</Naam>
+<innerHTML><![CDATA[<div id='buildingTile' style="position:absolute;" class="buildings"><IMG  src="map/MAP22_IMG/cafe.png" id="CafeClone" />></div>]]></innerHTML>
+<style>tile</style>
+</tile>
+
+<tile id="4,2">
+<Naam>Tree1</Naam>
+<innerHTML><![CDATA[
+<div id='buildingTile' class="buildings"><IMG  src="map/MAP22_IMG/bomen/Tree1.png" id="Tree1" style="position:absolute;" />>
+</div>]]>
+</innerHTML>
+<style>tile</style>
+</tile>
+
+<tile id="3,3">
+<Naam>Tree1</Naam>
+<innerHTML><![CDATA[
+<div id='buildingTile' class="buildings"><IMG  src="map/MAP22_IMG/bomen/Tree1.png" id="Tree1" style="position:absolute;" />>
+</div>]]>
+</innerHTML>
+<style>tile</style>
+</tile>
+
+<tile id="4,3">
+<Naam>Tree1</Naam>
+<innerHTML><![CDATA[
+<div id='buildingTile' class="buildings"><IMG  src="map/MAP22_IMG/bomen/Tree1.png" id="Tree1" style="position:absolute;" />>
+</div>]]>
+</innerHTML>
+<style>tile</style>
+</tile>
+
+
+
+
+</map>
