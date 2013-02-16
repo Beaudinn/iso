@@ -5,6 +5,12 @@
 I've only just started with scripting
 and have to learn a lot and will doe this with this project.
 </p>
+<br/>
+<h2>Projects</h2>
+<uL>
+<li>Create sample project SimCity like pure CSS block.</li>
+<li>Jason load function<li/>
+</ul>
 
 <p>My main concern was about performance.</p>
 
