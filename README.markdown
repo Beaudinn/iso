@@ -15,6 +15,8 @@ and have to learn a lot and will doe this with this project.
 <p>My main concern was about performance.</p>
 
 <h3>Useful resources</h3>
-<a href="http://www.prelude-prod.fr/demo/pp3diso/">http://www.prelude-prod.fr/demo/pp3diso/</a>
-<a href="http://craftyjs.com/">http://craftyjs.com/</a>
-<a href="http://code.google.com/p/jgen/">http://code.google.com/p/jgen/</a>
+<ul>
+<li><a href="http://www.prelude-prod.fr/demo/pp3diso/">http://www.prelude-prod.fr/demo/pp3diso/</a></li>
+<li><a href="http://craftyjs.com/">http://craftyjs.com/</a></li>
+<li><a href="http://code.google.com/p/jgen/">http://code.google.com/p/jgen/</a></li>
+</ul>
