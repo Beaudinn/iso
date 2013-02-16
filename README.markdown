@@ -1,37 +1,31 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
-{\fonttbl\f0\fmodern\fcharset0 Courier;}
-{\colortbl;\red255\green255\blue255;}
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red38\green38\blue38;\red255\green255\blue255;
+\red35\green35\blue35;}
 \paperw11904\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \deftab720
-\pard\pardeftab720
+\pard\pardeftab720\sl440
 
-\f0\fs24 \cf0 axono.me is a lightweight Javascript isometric pixel art grid library.\
-\
-* fully test driven using <a href="http://github.com/nathansobo/screw-unit">Screw Unit</a>\
-* small, mostly essentials only footprint\
-* a* pathfinding\
-* silly things, like a letter renderer\
-\
-# Examples\
-\
-Here's how you'd render a 6x6 isometric grid using jQuery.\
-\
-    $(document).ready(function()\{\
-      $('#board').iso();\
-\});\
-\
-The Iso object handles rendering as well as representing the grid as Javascript objects.\
-\
-See the <a href="http://axono.me/demos/index.html">demos</a> for more examples.\
-\
-# Why axono.me?\
-\
-Most of the pixel art we see today is said to be represented in an isometric projection. Though, in truth, it's actually done in dimetric projection, both isometric and dimetric projections are considered kinds of axonometric projections.\
-\
-axono.me has been designed to render axonometric projections. Though it works fine for any kind of grid. Check out the demos for examples of non-axonometric projections.\
-\
-# Useful resources\
-\
-* <a href="http://www.compuphase.com/axometr.htm">Axonometric projections - a technical overview</a>\
-* <a href="http://www-cs-students.stanford.edu/~amitp/game-programming/grids/">Amit's Thoughts on Grids</a>\
-}
+\f0\fs28 \cf2 My project is a lightweight\cf3 \cb4  isometric techniques in the modern web browsers without using a canvas, with only JavaScript and HTML CSS3. \cf0 \cb1 I make this project for my school as a final project of al my school years.\cf3 \cb4  Don't expect to see something amazing \cf0 \cb1 It will not be more than a trial project,\cb1 . After all we have canvas with which people are releasing Quake Arena clones at 60fps.
+\fs30 \
+
+\fs28 \
+\pard\pardeftab720
+\cf0 I've only just started with scripting\
+\pard\pardeftab720
+\cf0 and have to learn a lot and will doe this with this project.
+\fs30 \
+\pard\pardeftab720
+\cf0 \
+\pard\pardeftab720\sl380
+\cf0 My main concern was about performance. \cf5 \
+
+\b\fs28 \cf0 \
+\pard\pardeftab720\sa200
+
+\fs56 \cf0 Useful resources\cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b0\fs24 \cf0 http://www.prelude-prod.fr/demo/pp3diso/\
+http://craftyjs.com/\
+http://code.google.com/p/jgen/}
