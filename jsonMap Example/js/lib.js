@@ -18,11 +18,12 @@ Position.prototype = {
 		this.y = y;
 	}
 }
-
+colorMAP = '',
 hoverMap = [];
 currentHover = null;
 window.onmousemove = function(e)
 {
+	
 	if( hoverMap[e.clientY] != undefined )
 	{
 		if( hoverMap[e.clientY][e.clientX] != currentHover && currentHover != null )
@@ -65,8 +66,9 @@ HoverArea.prototype = {
 
 }
 
-Map = function(width, height)
+Map = function(width, height) // 3
 {
+
 	this.element = document.createElement('div');
 	this.element.setAttribute('id','container');
 	this.element.style.width = width + "px";
@@ -85,7 +87,6 @@ Map.prototype = {
 	map : [],
 	
 	hoverMap : [],
-	
 	ready : 0,
 	
 	containerMaxRows : 0,
@@ -110,11 +111,11 @@ Map.prototype = {
 
 		for( var i in this.map.buildings )
 		{
+
 			var building = this.map.buildings[i],
 				image = new Image();
-
 			image.src = 'map/buildings/' + building.image;
-			
+
 			var buildingObject = new Building(image, building.x, building.y);
 			
 			this.buildings.push(buildingObject)
@@ -132,7 +133,7 @@ Map.prototype = {
 		return parseInt(this.element.style.height);	
 	},
 	
-	getMap : function(map)
+	getMap : function(map)  // 2
 	{
 		var _this = this,
 			xhr = new XMLHttpRequest();
@@ -205,41 +206,47 @@ Tile = function(x,y)
 
 Tile.prototype = new MapItem();
 Tile.prototype.constructor = Tile;
-
 Building = function(image, x,y)
 {
 	MapItem.call(this)
 	
 	this.image = ( image instanceof Image ? image : new Image() );
+	this.position.set( Math.floor(y - (this.image.width/2)) , Math.floor(x -( this.image.height/2)) );
 	
 	this.canvas = document.createElement('canvas');
 	this.canvas.height = this.image.height;
 	this.canvas.width = this.image.width;
 	var context = this.canvas.getContext('2d');
+
 	context.drawImage(this.image,0,0);
-	
 	var pixels = this.image.width*this.image.height,
 		i = 0;
 		
 	this.hoverArea = new HoverArea(this.element);
-	
 	while(pixels != i)
 	{
 		var y = Math.floor(i/this.image.width),
 			x = i - this.image.width*y;
-		
+			
 		var pixel = context.getImageData(x,y,1,1);
 		if(pixel.data[3] != 0 )
 		{
+			x = this.position.x + x;
+			y = this.position.y + y;
 			hoverMap[y] = hoverMap[y] == undefined ? [] : hoverMap[y];
 			hoverMap[y][x] = this.hoverArea;
+			//colorMAP += '<div style="z-index:1000;position: absolute; left: '+x+'px; top: '+y+'px; width: 1px; height: 1px; background-color: red;"></div>';
+		}
+		else{
+		//colorMAP += '<div style="z-index:1000;position: absolute; left: '+x+'px; top: '+y+'px; width: 1px; height: 1px; background-color: blue;"></div>';	
 		}
 		i++;
 	}
-	
-	
-	this.position.set( Math.floor(y - (this.image.height/2)) , Math.floor(x -( this.image.width/2)) );
-	
+	//alert('test');
+	//console.log('------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------');
+	//console.log(hoverMap);
+
+	//document.write(colorMAP);
 	this.element.style.width = this.image.width + "px";
 	this.element.style.height = this.image.height + "px";
 	this.element.style.zIndex = x;

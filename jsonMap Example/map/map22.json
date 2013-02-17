@@ -2,9 +2,9 @@
 
 
 
-{"x":90,"y":70,"name":"cafe","type":"building","image":"cafe.png"},
-{"x":100,"y":70,"name":"cafe","type":"building","image":"cafe.png"},
-{"x":400,"y":120,"name":"cafe","type":"building","image":"cafe.png"}
+{"x":100,"y":500,"name":"cafe","type":"building","image":"cafe.png"},
+{"x":120,"y":300,"name":"cafe","type":"building","image":"oldcafe.png"},
+{"x":120,"y":90,"name":"cafe","type":"building","image":"school.png"}
 
 
 ]}
